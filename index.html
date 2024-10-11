@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melbourne Hook Turn Challenge</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>Hook Turn Challenge</h1>
+
+        <!-- Player name input -->
+        <div id="name-input">
+            <label for="player-name">Enter your name:</label>
+            <input type="text" id="player-name" placeholder="Your name">
+            <button id="start-game">Start Game</button>
+        </div>
+
+        <!-- Game screen -->
+        <div id="game-screen" style="display: none;">
+            <div id="road">
+                <div id="car"></div>
+                <div id="intersection"></div>
+                <!-- Traffic cars -->
+                <div class="traffic-car" id="traffic-car-1"></div>
+                <div class="traffic-car" id="traffic-car-2"></div>
+            </div>
+            <div id="controls">
+                <button id="turn-left">Turn Left</button>
+                <button id="turn-right">Turn Right (Hook Turn)</button>
+            </div>
+            <p id="message"></p>
+        </div>
+
+        <!-- High scores display -->
+        <div id="high-scores" style="display: none;">
+            <h2>High Scores</h2>
+            <ul id="scores-list"></ul>
+            <button id="restart">Restart</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
